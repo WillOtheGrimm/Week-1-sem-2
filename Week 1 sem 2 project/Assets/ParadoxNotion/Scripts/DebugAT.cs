@@ -34,8 +34,8 @@ namespace NodeCanvas.Tasks.Actions {
 			//Get a value or data from an object
 
 			Debug.Log("Debug is initialized");
-
-
+			
+			
 			return null;
 		}
 
@@ -51,15 +51,19 @@ namespace NodeCanvas.Tasks.Actions {
 
 
 			//This has to be at the end of the script to indicate that the action is done
-			EndAction(true);
+			//EndAction(true);
 
 		}
 
 		//Called once per frame while the action is active.
 		protected override void OnUpdate() {
 
-
-
+		
+			if (Input.GetKeyDown(KeyCode.A))
+			{
+				Debug.Log("Beans");
+				EndAction(true);
+			}
 			/*agent.transform.position += agent.transform.position * 3f * Time.deltaTime;
 			Rigidbody rb = agent.GetComponent<Rigidbody>();
 			agent.gameObject.SetActive(true);*/

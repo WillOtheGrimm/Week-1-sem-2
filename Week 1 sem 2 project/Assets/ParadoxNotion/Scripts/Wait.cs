@@ -42,6 +42,12 @@ namespace NodeCanvas.Tasks.Conditions {
 		protected override bool OnCheck() {
 			currentTimeWaiting += Time.deltaTime;
 
+			if (currentTimeWaiting > waitDuration)
+			{
+
+			}
+
+
 			return true;
 		}
 	}
