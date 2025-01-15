@@ -71,7 +71,7 @@ namespace NodeCanvas.Tasks.Actions {
 
 
 
-			Debug.Log("Debug is updating");
+			//Debug.Log("Debug is updating");
 
 		}
 
